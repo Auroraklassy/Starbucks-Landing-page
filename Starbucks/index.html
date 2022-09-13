@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Starbucks Website Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="Logo.png"  class="logo" alt="Logo" width="100px" height="100px"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2> It's not just coffee<br>It's <span>Starbucks</span></h2>
+                <p>Whether you're searching for something new to warm your mug, seeking the best brew method for your favorite blend or exploring our rarest offerings, you’ve come to the right place.</p>
+                <a href="#">Learn More</a>
+        </div>
+        <div class="imgBox">
+            <img src="Img1.png.png" alt="starbucks" width="400px" height="350px">
+        </div>
+        <ul class="Thumb">
+            <li><img src="Thumb1.png.png" alt="Img" width="350px" height="100px" onclick="imgslider('Img9.png');changeCirclecolor('#017143') "></li>
+            <li><img src="Thumb2.png.png" alt="Img" width="350px" height="100px" onclick="imgslider('imgD.png');changeCirclecolor('#eb7495') "></li>
+            <li><img src="Thumb3.png.png" alt="Img" width="350px" height="100px" onclick="imgslider('Img7.png');changeCirclecolor('#d752b1') "></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="instagram.png" alt="instagram" width="50px" height="70px"> </a> </li>
+            <li><a href="#"><img src="facebook.png" alt="facebook" width="50px" height="70px"> </a> </li>
+            <li><a href="#"><img src="Twitter.png" alt="twitter" width="50px" height="70px"> </a> </li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+
+        function imgslider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCirclecolor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
